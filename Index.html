@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossils.com</title>
+
+     <!-- Tailwind cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font awsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- css file -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#ffffff]">
+
+<div class="container mx-auto h-screen">
+
+  <!-- nav part -->
+<nav class="py-8 flex justify-between items-center">
+  <div>
+    <h2 class="text-3xl text-[#009688] font-bold">SkyPlane</h2>
+  </div>
+
+  <div class="px-6 md:hidden">
+    <i class="fa-solid fa-bars-staggered"></i>
+  </div>
+
+  <div class="hidden md:flex justify-between items-center gap-10">
+    
+   <div>
+    <i class="fa-solid fa-circle-question font-bold text-lg"></i>
+    <span class="font-semibold cursor-pointer">Help</span>
+   </div>
+
+   <div class="group transition hover:translate-y-1">
+    <i class="fa-solid fa-plane -rotate-90 transition-all duration-500 ease-in-out
+    group-hover:-translate-y-6
+    group-hover:opacity-0"></i>
+    <span class="font-semibold cursor-pointer">My Trips</span>
+   </div>
+
+    <button class="font-semibold border-2 py-2 px-6 rounded-xl bg-black text-white transition-all duration-300 ease-out cursor-pointer hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30">Sign Up</button>
+    <button class="font-semibold border-2 py-2 px-6 rounded-xl bg-black text-white transition-all duration-300 ease-out cursor-pointer hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30">Log In</button>
+
+  </div>
+</nav>
+
+
+<!-- hero section -->
+
+<div class="group relative h-[440px] overflow-hidden md:rounded-xl">
+
+  <div class="absolute inset-0 bg-[url('/asset/plane3.jpg')] 
+              bg-cover bg-center transition-transform duration-700 
+              group-hover:scale-110">
+  </div>
+
+  <div class="absolute inset-0 bg-black/40 
+              group-hover:bg-black/20 transition duration-500">
+  </div>
+  
+  <div class="relative h-full flex items-center justify-center text-white">
+
+    <!-- First Text -->
+    <h1 class="absolute text-5xl font-bold 
+               opacity-100 group-hover:opacity-0 
+               transition duration-500">
+      Explore the world with us.
+    </h1>
+  
+    <!-- Second Text -->
+    <h1 class="absolute text-5xl font-bold 
+               opacity-0 group-hover:opacity-100 
+               transition duration-500">
+      Best deals are waiting for you.
+    </h1>
+  
+  </div>
+
+</div>
+
+<!-- flight searchibg -->
+<div class="absolute bg-[#ffffff] rounded shadow-xl h-[145vw] md:h-35 w-[80vw] top-[76%] left-[10%] right-[10%]  flex flex-col md:flex-row items-center justify-center border-4
+border-transparent hover:border-[#10ac84] transition duration-500 ease-in-out gap-5 flex- text-wrap">
+
+  <div class="group flex flex-col mt-3.5 md:mt-1">
+    <label for="text">From</label>
+    <input type="text" placeholder="London Stansted" class="py-4 px-6 rounded border-none focus:outline-none">
+    <span class="h-1 w-0 bg-[#1e26cc] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+  <span class="bg-amber-950 block h-80 md:h-20 w-0.5 rotate-90 md:rotate-none"></span>
+
+  <div class="group flex flex-col">
+    <label for="text">To</label>
+    <input type="text" placeholder="Stockholm" class="py-4 px-6 rounded border-none focus:outline-none">
+    <span class="h-1 w-0 bg-[#1e26cc] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+  <span class="bg-amber-950 h-80 md:h-20 w-0.5 rotate-90 md:rotate-none"></span>
+
+  <div class="group flex flex-col">
+    <label for="date">Depurture</label>
+    <input type= "date" placeholder="Enter date" class="py-4 px-6 rounded border-none focus:outline-none">
+    <span class="h-1 w-0 bg-[#1e26cc] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+  <span class="bg-amber-950 h-80 md:h-20 w-0.5 rotate-90 md:rotate-none"></span>
+
+  <div class="group flex flex-col">
+    <label for="date">Return</label>
+    <input type="date" placeholder="Return date" class="py-4 px-6 rounded border-none focus:outline-none">
+    <span class="h-1 w-0 bg-[#1e26cc] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+
+  <button class="bg-[#009688] px-20 py-4 md:px-5 md:py-7 group"> <i class="fa-solid fa-arrow-right text-white font-bold text-xl cursor-pointer transform duration-300 group-hover:translate-x-1"></i> </button>
+
+</div>
+
+
+<!-- popular routs -->
+
+<div class="mt-[172vw] md:mt-[9vw]">
+  <div> <h1 class="font-bold text-2xl mb-3">Popular Routes</h1> </div>
+
+  <div class="overflow-hidden h-auto flex gap-2.5 items-center justify-between">
+    
+    <div class="overflow-hidden rounded-xl w-[30vw] h-[30vw]">
+      <div class="bg-[url(/asset/doha.avif)] bg-cover bg-center w-full h-full flex items-end justify-start transition-transform duration-500 hover:scale-110">
+        <h1 class="text-white text-xl ml-5 font-bold mb-5">
+          Doha 
+          <span class="text-[12px] block">from $300</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="overflow-hidden rounded-xl w-[30vw] h-[30vw]">
+      <div class="bg-[url(/asset/madrid.avif)] bg-cover bg-center w-full h-full flex items-end justify-start transition-transform duration-500 hover:scale-110">
+        <h1 class="text-white text-xl ml-5 font-bold mb-5">
+          Madrid 
+          <span class="text-[12px] block">from $400</span>
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="overflow-hidden rounded-xl w-[30vw] h-[30vw]">
+      <div class="bg-[url(/asset/paris.avif)] bg-cover bg-center w-full h-full flex items-end justify-start transition-transform duration-500 hover:scale-110">
+        <h1 class="text-white text-xl ml-5 font-bold mb-5">
+          Paris
+          <span class="text-[12px] block">from $350</span>
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="overflow-hidden rounded-xl w-[30vw] h-[30vw]">
+      <div class="bg-[url(/asset/new.avif)] bg-cover bg-center w-full h-full flex items-end justify-start transition-transform duration-500 hover:scale-110">
+        <h1 class="text-white text-xl ml-5 font-bold mb-5">
+          New York 
+          <span class="text-[12px] block">from $500</span>
+        </h1>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- more information -->
+
+<div class="mt-[30vw] md:mt-[3vw] flex flex-wrap items-center justify-center gap-7">
+  <div class="h-[20vw] w-[25vw] flex flex-col items-center justify-center">
+    <i class="fa-solid fa-award text-5xl text-[#ff9f43]"></i>
+    <h1 class="font-bold md:text-xl mt-2">Guarantee of the best prize</h1>
+    <p class="ml-2 mt-1.5 font-semibold hidden md:block">We offer only the best deals, if you find any cheaper prize please contuct with us.</p>
+  </div>
+
+  <div class="h-[20vw] w-[25vw] flex flex-col items-center justify-center">
+    <i class="fa-solid fa-circle-dollar-to-slot text-5xl text-[#ff9f43]"></i>
+    <h1 class="font-bold md:text-xl mt-2">Refund & cancellaton</h1>
+    <p class="ml-2 mt-1.5 font-semibold hidden md:block">Your flight got cancelled? We are ready to convert with our instant refund service.</p>
+  </div>
+
+  <div class="h-[20vw] w-[25vw] flex flex-col items-center justify-center">
+    <i class="fa-solid fa-biohazard text-5xl text-[#ff9f43]"></i>
+    <h1 class="font-bold md:text-xl mt-2">Pandamic information</h1>
+    <p class="ml-2 mt-1.5 font-semibold hidden md:block">Read about all the restriction if any pandamic spread and may affect your flight.</p>
+  </div>
+
+</div>
+
+
+
+
+<!-- Mobile app -->
+<div class="h-auto w-auto flex items-center justify-center mt-40 md:mt-5 relative">
+
+  <div class="md:h-[30vw] w-[88vw] flex items-center justify-center">
+    <div class="bg-[url(/asset/plane2.jpg)] bg-cover bg-center h-full w-full">
+      <div class="h-auto md:w-[50%]">
+        <h1 class="md:text-3xl text-white mt-5 ml-4 font-bold">Get our new mobile app and book flights with 10% discount!</h1>
+      <p class="md:text-xl font-bold ml-4 mt-25 text-white">Download our new SkyPlane app and have control of your trips in your pocket. With our app you will get secreat deals and extra bookings discount!</p>
+
+      <button class="mt-5 ml-4 bg-white text-black py-2 px-5 rounded-xl hover:bg-black hover:text-white transition duration-300 cursor-pointer">Download in Mobile Store</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- footer part -->
+<div class="bg-[#009688] h-auto mt-3 md:h-[20vw] md:rounded-xl md:mt-2 flex justify-between">
+  <div class="mt-10 ml-5">
+    <h2 class="text-3xl text-white font-bold">SkyPlane</h2>
+  </div>
+  <div class="mt-10 mr-5 text-white">
+    <h2 class="font-bold">Help</h2>
+    <h2>FAQ</h2>
+    <h2>Customer Service</h2>
+    <h2>How To Guide</h2>
+    <h2>Contact Us</h2>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
